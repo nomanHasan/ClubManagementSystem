@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="ClubManagementV1.Pages.AdminPages.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="../../scripts/jquery-2.2.1.min.js"></script>
+    <script src="../../scripts/bootstrap.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">AIUB Club Management System</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Manage User Accounts</a></li>
+                    <li><a href="~/Pages/AdminPages/ClubPages/ClubAdd.aspx" runat="server">Create A Club</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span>My Account</a></li>
+                    <li><a href="../Login.aspx"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                    <li><a href="~/Pages/Logout.aspx" runat="server" ><span class="glyphicon glyphicon-log-out"></span>Log Out</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+
+
+        <div class="container-fluid text-center">
+            <div class="row content">
+                <div class="col-sm-2 sidenav">
+                    <div class="list-group">
+                        <a href="~/Pages/AdminPages/Home.aspx" runat="server" class="list-group-item active">Home</a>
+                        <a href="~/Pages/AdminPages/ClubPages/ClubList.aspx" runat="server" class="list-group-item">Club List</a>
+                        <a runat="server" href="~/Pages/AdminPages/EventPages/EventList.aspx" class="list-group-item">Events List</a>
+                        <a runat="server" href="~/Pages/AdminPages/PresidentPages/PresidentList.aspx" class="list-group-item">Presidents List</a>
+                        <a runat="server" href="~/Pages/AdminPages/StudentPages/StudentList.aspx" class="list-group-item">Students List</a>
+                        <a runat="server" class="list-group-item">Pending Event Request</a>
+                        <a runat="server" class="list-group-item">Pending Club Request</a>
+                    </div>
+
+                </div>
+
+                <form runat="server">
+                    <div class="col-sm-8 text-left">
+                        <asp:ContentPlaceHolder ID="bodyContent" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer class="container-fluid text-center">
+            <p> -------- </p>
+        </footer>
+
+        <div class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container text-center">
+                <p>This is the Footer</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+﻿div.form-login{
+    margin-left:auto;
+    margin-right:auto;
+    width: 20%;
+    padding: 10px;
+    background:rgba(255,0,0,0.1) ;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+body {
+    background-image: url('../Images/mountainLake.jpg');
+    background-size:cover;
+}
+.loginButton{
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+    background-color:#12cf7e;
+    padding: 15px 32px;
+}
+.inputText{
+    border: 0px solid #01013d;
+    border-bottom-width: 1px;
+    border-style: dotted;
+    background-color: transparent;
+}
